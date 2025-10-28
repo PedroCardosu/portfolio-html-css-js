@@ -1,120 +1,142 @@
-
-/* ESTILO GERAL */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
-
-body{
-    background-color: #F9FAFB;
-    height: 100vh;
+img.foto-de-capa{
+    width: 500px;
+    height: auto;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
+:root{
+
+    --branco:#F1F1F1;
+    --cereja:#db2763;
+    --pretoRico:#0D1117;
+}
 .interface{
-    max-width: 1280px;
+    max-width: 1380px;
+    padding: 0 4%;
     margin: 0 auto;
 }
-
-.flex{
-    display:flex
-}
-
-.btn-contato button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #2563EB;
-    color: #ffffff;
-    border:0;
+button{
+    background-color: transparent;
+    border: 2px solid var(--branco);
+    border-radius: 8px;
+    color: var(--branco);
+    transition: .5s;
     cursor: pointer;
-    border-radius: 30px;
-    transition: .2s;
 }
-
-.btn-contato button:hover{
-    box-shadow: 0px 0px 8px #2563EB;
-    transform: scale(1.05)
+button:hover{
+    background-color: var(--cereja);
 }
+/* ESTILO CABEÇALHO */
 
-/* ESTILO DO CABEÇALHO */
-
-.header{
-    padding:40px 4%;
+header{
+    background-color:transparent;
+    padding: 16px 0px;
+    position: fixed;
+    width:100%;
 }
 
 header > .interface{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
-header a{
-    color: #7d7d7d;
-    text-decoration: none;
-    display:inline-block;
-    transition: .2s;
+header .logotipo-cabecalho img{
+    max-width: 200px;
 }
 
-header a:hover {
-    color:#ffffff;
-    transform: scale(1.05);
-}
-
-header nav ul{
-    list-style-type: none;
-    padding: 0 40px;
-}
-
-header nav ul li{
-    display: inline-block;
-}
-
-.foto-de-perfil{
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 30px #2563EB;
-}
-
-/* ESTILO DO TOPO DO SITE */
-
-section.topo-do-site{
-    padding: 40px 4%;
-}
-
-section.topo-do-site.flex{
+header nav.menu-desktop ul{
+    display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 150px;
+    list-style: none;
+    gap: 56px;
 }
 
-.topo-do-site .txt-topo-site h1{
-    color: #1F2937;
-    font-size: 42px;
-    line-height: 40px;
+header nav.menu-desktop a{
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: .5s;
 }
 
-.topo-do-site .txt-topo-site h1 span{
-    color: #7C3AED;
-}
-.topo-do-site .txt-topo-site p{
-    color: #6B7280;
-    margin: 40px 0
+header nav.menu-desktop a:hover{
+    color:var(--cereja);
 }
 
-.topo-do-site .img-topo-site img{
-    position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate;
+header nav.menu-desktop button{
+    width: 144px;
+    height: 48px;
 }
-    
-    @keyframes flutuar{
-        0%{
-            top: 0;
-        }
-        100% {
-            top:30px
-        }
-    }
+
+/* Estilo da hero */
+
+section.hero{
+    background-image: linear-gradient(to left,var(--pretoRico)70%,var(--cereja)30%);
+    padding-top: 144px;
+}
+
+.hero > .interface{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.hero .img-hero{
+    line-height: 0;
+}
+.hero .txt-hero h1{
+    font-size: 3rem;
+    color: var(--branco);
+    font-weight: 300;
+}
+
+.hero .txt-hero h1 span{
+    color: var(--cereja);
+    display:block;
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+.hero .txt-hero p{
+    color:var(--branco);
+    line-height: 1,6;
+    font-size: 1.2rem;
+    margin: 24px 0;
+}
+
+.hero .txt-hero button{
+    width: 200px;
+    height: 48px;
+}
+
+
+
+
+
+.neon-glow {
+  color: #DB2763;
+  text-shadow:
+    0 0 1px #DB2763,
+    0 0 2px #DB2763;
+  animation: pulseGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes pulseGlow {
+  0% {
+    text-shadow:
+      0 0 1px #DB2763,
+      0 0 2px #DB2763;
+  }
+  100% {
+    text-shadow:
+      0 0 3px #DB2763,
+      0 0 5px #DB2763;
+  }
+}
