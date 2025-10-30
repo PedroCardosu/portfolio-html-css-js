@@ -1,3 +1,6 @@
+
+/* ESTILIZAÇÃO UNIVERSAL */
+
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +19,12 @@ img.foto-de-capa{
     --branco:#F1F1F1;
     --cereja:#db2763;
     --pretoRico:#0D1117;
+    --preto:#06080C;
+    --cinza:#6C737C;
+}
+
+body{
+    background-color:var(--preto);
 }
 .interface{
     max-width: 1380px;
@@ -33,6 +42,37 @@ button{
 button:hover{
     background-color: var(--cereja);
 }
+
+h1.titulo-section{
+    font-size: 4rem;
+    color: var(--branco);
+}
+
+h1.titulo-section span{
+    color: var(--cereja);
+}
+
+span {
+  color: #DB2763;
+  text-shadow:
+    0 0 1px #DB2763,
+    0 0 2px #DB2763;
+  animation: pulseGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes pulseGlow {
+  0% {
+    text-shadow:
+      0 0 1px #DB2763,
+      0 0 2px #DB2763;
+  }
+  100% {
+    text-shadow:
+      0 0 3px #DB2763,
+      0 0 5px #DB2763;
+  }
+}
+
 /* ESTILO CABEÇALHO */
 
 header{
@@ -116,27 +156,87 @@ section.hero{
     height: 48px;
 }
 
+/* Estilo sobre mim */
 
-
-
-
-.neon-glow {
-  color: #DB2763;
-  text-shadow:
-    0 0 1px #DB2763,
-    0 0 2px #DB2763;
-  animation: pulseGlow 2s ease-in-out infinite alternate;
+section.sobre-mim{
+    padding: 80px 0;
 }
 
-@keyframes pulseGlow {
-  0% {
-    text-shadow:
-      0 0 1px #DB2763,
-      0 0 2px #DB2763;
-  }
-  100% {
-    text-shadow:
-      0 0 3px #DB2763,
-      0 0 5px #DB2763;
-  }
+.sobre-mim > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:96px;
+}
+
+.sobre-mim .txt-sobre p{
+    color: var(--cinza);
+    text-align: justify;
+    line-height: 1.6;
+    margin: 24px 0;
+
+}.sobre-mim .btn-redes button{
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.sobre-mim img{
+    height: 650px;
+    width: auto;
+}
+
+/* Estilo da seção habilidades*/
+
+.skills img{
+    width: 50px;
+    height: auto;
+}
+section.skills{
+    background-color:var(--pretoRico);
+    padding: 80px 0;
+}
+
+.skills article{
+    display: grid;
+    grid-template:1fr / 1fr 1fr 1fr;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.skills .box-skills{
+    background-color: var(--preto);
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.box-skills .icon-skills{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 16px;
+}
+
+.box-skills .icon-skills img{
+    max-width: 80px;
+}
+
+.icon-skills h2{
+    color: var(--branco);
+}
+
+.box-skills p{
+    color: var(--cinza);
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.skills.btn-contato{
+    text-align: center;
+}
+
+.skills .btn-contato button{
+    width: 200px;
+    height: 48px;
 }
