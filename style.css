@@ -308,4 +308,68 @@ section.portfolio{
     background-image: url(imagens/Projetos/projeto-portifolio.webp);
 }
 
+/* Estilo Formulário */
 
+section.contato{
+    padding: 80px 0;
+    background-color: var(--pretoRico);
+}
+
+.contato > .interface{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contato .txt-contato p{
+    color: var(--cinza);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.contato .txt-contato p i{
+    color: var(--cereja);
+    font-size: 2rem;
+}
+
+.contato form{
+    width: 50%;
+}
+
+.contato form input, .contato form textarea{
+    width: 100%;
+    padding: 10px 10px;
+    background: transparent;
+    border: 2px solid var(--cinza);
+    outline: none;
+    color: var(--branco);
+    font-size: 1.1rem;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.contato form .tel-proj{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contato form textarea{
+    resize: none;
+    height: 150px;
+}
+
+.contato form .btn-enviar input{
+    border-color:var(--branco);
+    transition:.5s;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.contato form .btn-enviar input:hover{
+    background-color: var(--cereja);
+    border-color:var(--cereja)
+}
