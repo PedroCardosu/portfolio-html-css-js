@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-   
-     <!--GOOGLE FONTS-->
+    <link rel="stylesheet" href="css/responsivo.css">
+
+    <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!--FIM GOOGLE FONTS-->
 
     <!--BOOTSTRAP ICONS-->
@@ -23,16 +27,19 @@
         <div class="interface">
 
             <section class="logotipo-cabecalho">
-                <img src="imagens/Logotipos portifólio sem fundo/Logotipo 4.png" alt="logotipo do site">
+                <div class="logo-container">
+                    <img src="imagens/Logotipos portifólio sem fundo/Logotipo-1.png" alt="Logo Base" class="logo-base">
+                    <img src="imagens/Logotipos portifólio sem fundo/Logotipo-2.png" alt="Logo Rolagem" class="logo-scroll">
+                </div>
             </section><!-- FIM DO CABECALHO -->
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre mim</a></li>
-                    <li><a href="#">Habilidades</a></li>
-                    <li><a href="#">Portfólio</a></li>
-                    <li><a href="#"><button>Contato</button></a></li>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#sobre-mim">Sobre mim</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato"><button>Contato</button></a></li>
                 </ul>
             </nav> <!-- FIM DO MENU-DESKTOP -->
 
@@ -41,30 +48,31 @@
     </header> <!-- FIM DO CABEÇALHO -->
 
     <main>
-
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="interface">
 
                 <div class="img-hero">
-                    <img class='foto-de-capa' src="imagens/fotos de Pedro Cardoso/foto-hero.webp" alt="Foto de Pedro Cardoso">
+                    <img class='foto-de-capa' src="imagens/fotos de Pedro Cardoso/foto-hero.webp"
+                        alt="Foto de Pedro Cardoso">
                 </div><!-- FIM IMAGEM HERO -->
 
                 <div class="txt-hero">
                     <h1>Ideias digitais.<span>Resultados reais!</span></h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy t</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy t</p>
                     <a href="#"><BUtton>Entre em contato</BUtton></a>
                 </div><!-- FIM TXT HERO -->
 
             </div><!-- FIM DA INTERFACE -->
         </section><!-- FIM DA SECTION HERO -->
 
-        <section class="sobre-mim">
+        <section class="sobre-mim" id="sobre-mim">
             <div class="interface">
                 <div class="txt-sobre">
                     <h1 class="titulo-section">Sobre <span>mim</span></h1>
 
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Nullam faucibus, justo in imperdiet hendrerit, ligula orci vehicula dui,
                         non condimentum ipsum ante at justo. Aenean ac eros elementum, fringilla
                         felis vitae, pharetra massa. Quisque sodales turpis quis risus vestibulum,
@@ -74,7 +82,9 @@
                     </p>
 
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum repudiandae ipsa vitae impedit repellat, alias facilis corrupti ipsum autem expedita aut adipisci animi fugit iure quisquam ducimus perferendis itaque hic!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum repudiandae ipsa vitae impedit
+                        repellat, alias facilis corrupti ipsum autem expedita aut adipisci animi fugit iure quisquam
+                        ducimus perferendis itaque hic!
                     </p>
 
                     <div class="btn-redes">
@@ -91,7 +101,7 @@
             </div>
         </section><!-- FIM DA SECTION SOBRE MIM -->
 
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="interface">
 
                 <h1 class="titulo-section">Minhas <span>especialidades</span></h1>
@@ -102,7 +112,8 @@
                             <img src="imagens/icones/icone-ux.png" alt="icone ux ui design">
                             <h2>UI/UX <span class="span-especialidades">designer</span></h2>
                         </div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum obcaecati commodi delectus qui</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum obcaecati commodi delectus
+                            qui</p>
                     </div> <!-- FIM Da ESPECIALIDADE -->
 
                     <div class="box-skills">
@@ -110,7 +121,8 @@
                             <img src="imagens/icones/icone-figma.png" alt="icone Figma">
                             <h2>Prototipagem <span>Figma</span></h2>
                         </div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum obcaecati commodi delectus qui</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum obcaecati commodi delectus
+                            qui</p>
                     </div> <!-- FIM Da ESPECIALIDADE -->
 
                     <div class="box-skills">
@@ -118,7 +130,8 @@
                             <img src="imagens/icones/icone-css.png" alt="icone CSS">
                             <h2>Manipulação <span>CSS</span></h2>
                         </div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum obcaecati commodi delectus qui</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum obcaecati commodi delectus
+                            qui</p>
                     </div> <!-- FIM Da ESPECIALIDADE -->
                 </article> <!-- FIM DO GRID MINHAS ESPECIALIDADES -->
 
@@ -128,43 +141,28 @@
             </div>
         </section><!-- FIM DA SECTION MINHAS ESPECIALIDADES -->
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="interface">
-
+                <div class="portfolio-txt">
                     <h1 class="titulo-section">Meu <span>portfólio</span></h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Confira alguns dos meus projetos recentes.</p>
+                </div>
 
-                    <article class="portfolio-container">
-
-                        <a href="#" target="_blank">
-                            <div class="portfolio-box projeto1">
-                                <div class="info-portfolio">
-                                    Projeto 01
-                                </div>
-                            </div>
-                        </a> <!-- FIM DO PORTFOLIO BOX -->
-
-                        <a href="#" target="_blank">
-                            <div class="portfolio-box projeto2">
-                                <div class="info-portfolio">
-                                    Projeto 02
-                                </div>
-                            </div>
-                        </a> <!-- FIM DO PORTFOLIO BOX -->
-
-                        <a href="#" target="_blank">
-                            <div class="portfolio-box projeto3">
-                                <div class="info-portfolio">
-                                    Projeto 03
-                                </div>
-                            </div>
-                        </a> <!-- FIM DO PORTFOLIO BOX -->
-
-                    </article>
-            </div>  
+                <div class="portfolio-container">
+                    <div class="portfolio-box projeto1">
+                        <div class="info-portfolio">Projeto 01</div>
+                    </div>
+                    <div class="portfolio-box projeto2">
+                        <div class="info-portfolio">Projeto 02</div>
+                    </div>
+                    <div class="portfolio-box projeto3">
+                        <div class="info-portfolio">Projeto 03</div>
+                    </div>
+                </div>
+            </div>
         </section> <!-- FIM DA SECTION PORTFOLIO -->
 
-        <section class="contato">
+        <section class="contato" id="contato">
             <div class="interface">
 
                 <div class="txt-contato">
@@ -188,7 +186,25 @@
                 </form>
             </div>
 
-        </section>
+        </section><!-- FIM DA SECTION CONTATO -->
     </main>
+
+    <footer>
+        <div class="interface">
+            <div class="logo-footer">
+                <img src="imagens/Logotipos portifólio sem fundo/Logotipo-2.png" alt="logotipo rodapé">
+                <p>Todos os direitos reservados</p>
+            </div>
+
+            <div class="btn-redes">
+                <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
+                <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
+                <a href="#"><button><i class="bi bi-github"></i></button></a>
+                <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+            </div>
+        </div>
+    </footer><!-- FIM DO RODAPÉ -->
 </body>
+<script src="script.js"></script>
+
 </html>

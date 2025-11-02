@@ -1,0 +1,232 @@
+@media (max-width:1000px) {
+
+    /* Estilo universal */
+
+    h1.titulo-section {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+        section p {
+        font-size: 1rem; /* tamanho legível e uniforme */
+        line-height: 1.6; /* deixa a leitura confortável */
+    }
+
+    /* Estilo do menu */
+
+    header {
+        background-image: none;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    /* Estilo da hero */
+
+    section.hero {
+        background-image: linear-gradient(to top, var(--pretoRico)90%, var(--cereja)10%);
+    }
+
+    .hero>.interface {
+        text-align: center;
+        gap: 64px;
+        flex-direction: column-reverse;
+    }
+
+    .hero .img-hero img {
+        max-width: 320px;
+    }
+
+    .hero .txt-hero h1 {
+        text-align: left; 
+        font-size: 2rem;
+    }
+
+    .hero .txt-hero h1 span {
+        font-size: 3rem;
+    }
+
+    .hero .txt-hero p {
+        font-size: 1rem;
+
+    }
+
+    /* Estilo sobre mim */
+
+    .sobre-mim>.interface {
+        flex-direction: column;
+        gap: 64px;
+    }
+
+
+    .sobre-mim .img-sobre img {
+        width: 300px;
+        height: auto;
+    }
+
+    /* Estilo da seção habilidades*/
+
+    .skills img {
+        width: 50px;
+        height: auto;
+    }
+
+    .skills article {
+
+        grid-template: 1fr 1fr 1fr / 1fr;
+    }
+
+    .skills h1 {
+        font-size: 2.4rem;
+    }
+
+    /* Estilo section portfolio */
+
+
+     .portfolio .portfolio-container {
+        grid-template: 1fr 1fr 1fr / 1fr;
+    }
+
+    .portfolio-container .portfolio-box {
+        max-width: 300px;
+        margin: 0 auto;
+    } 
+    
+
+    /* Estilo seção contato */
+
+    .contato>.interface {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .contato form {
+        width: 100%;
+    }
+
+    .contato form .tel-proj {
+        display: block;
+    }
+
+    /* Estilo rodapé */
+
+    footer>.interface {
+        flex-direction: column-reverse;
+        gap: 32px;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* TESTES CHAT GPT */
+
+    /* Seção Skills - Carrossel horizontal no mobile */
+    .skills article {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory; /* efeito de "snap" ao passar */
+        -webkit-overflow-scrolling: touch; /* rolagem suave no iOS */
+        gap: 16px;
+        padding-bottom: 16px; /* espaço para scroll */
+    }
+
+    .skills .box-skills {
+        flex: 0 0 80%; /* cada card ocupa 80% da largura do container */
+        scroll-snap-align: start;
+    }
+
+        .skills-container {
+        display: flex;
+        gap: 16px;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        animation: slideSkills 15s linear infinite;
+    }
+
+
+
+
+
+
+
+    
+    /* Portfólio - carrossel horizontal */
+    .portfolio .portfolio-container {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 24px;
+        padding-bottom: 16px;
+        padding-left: 8px; /* dá uma leve margem inicial */
+    }
+
+    .portfolio-container .portfolio-box {
+        flex: 0 0 90%; /* aumenta a largura do card para ocupar mais da tela */
+        scroll-snap-align: start;
+        max-width: 500px; /* opcional, limita para não ficar enorme em tablets */
+    }
+
+        /* Ajusta container da seção portfolio no mobile */
+    .portfolio > .interface {
+        max-width: 100%;      /* remove limite de 1380px */
+        padding: 0 8px;       /* dá um pequeno espaçamento lateral */
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+    /* Mantém o carrossel horizontal */
+    .portfolio-container {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 24px;
+        padding-bottom: 16px;
+        padding-left: 8px;
+    }
+
+    .portfolio-container .portfolio-box {
+        flex: 0 0 90%;
+        scroll-snap-align: start;
+        max-width: 500px;
+    }
+
+    /* Títulos abaixo dos cards */
+    .portfolio-container .portfolio-title {
+        flex: 0 0 90%;   /* ocupa mesma largura do card */
+        text-align: center;
+        color: var(--branco);
+        font-size: 1.2rem;
+        margin-bottom: 24px;
+        scroll-snap-align: start; /* alinha junto ao card */
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
