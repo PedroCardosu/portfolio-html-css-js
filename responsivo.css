@@ -1,0 +1,159 @@
+/* ====================== RESPONSIVO ====================== */
+
+@media (max-width:1000px) {
+
+    /* ---------- TEXTOS ---------- */
+    h1.titulo-section {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    section p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+   /* ---------- MENU ---------- */
+
+    header {
+        background-image: none;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .btn-menu-mobile, .menu-mobile{
+        display: block;
+    }
+
+    /* ---------- HERO ---------- */
+
+    section.hero {
+        background-image: linear-gradient(to top, var(--pretoRico)89%, var(--cereja)11%);
+    }
+
+    .hero>.interface {
+        text-align: center;
+        gap: 64px;
+        flex-direction: column-reverse;
+    }
+
+    .hero .img-hero img {
+        max-width: 320px;
+    }
+
+    .hero .txt-hero h1 {
+        text-align: left; 
+        font-size: 2rem;
+    }
+
+    .hero .txt-hero h1 span {
+        font-size: 3.5rem;
+    }
+
+    .hero .txt-hero p {
+        font-size: 1rem;
+
+    }
+
+    /* ---------- SOBRE MIM ---------- */
+
+    .sobre-mim>.interface {
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    .sobre-mim .img-sobre img {
+        width: 300px;
+        height: auto;
+    }
+
+    /* ---------- SKILLS - CARROSSEL ---------- */
+
+    section.skills article {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 16px;
+        padding-bottom: 16px;
+    }
+
+    .skills img {
+        width: 50px;
+        height: auto;
+    }
+
+    .skills .box-skills {
+        flex: 0 0 80%;
+        scroll-snap-align: start;
+    }
+
+
+    /* ---------- PORTFÓLIO - CARROSSEL ---------- */
+
+    .portfolio > .interface {
+        max-width: 100%;
+        padding: 0 8px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio .portfolio-container {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 24px;
+        padding-bottom: 16px;
+        padding-left: 8px;
+    }
+
+    .portfolio .portfolio-container a {
+        flex: 0 0 90%;
+        scroll-snap-align: start;
+        max-width: 500px;
+        display: block;
+        text-decoration: none;
+    }
+    
+    .portfolio .portfolio-container a .portfolio-box {
+    width: 100%;
+    height: 500px; 
+    }   
+
+    .portfolio-container .portfolio-box:hover {
+        transform: none;
+    }
+
+    .portfolio-titulo-mobile {
+        display: block;
+    }
+
+    .portfolio-box .info-portfolio {
+        display: flex; /* overlay ainda aparece */
+    }
+
+    /* ---------- CONTATO ---------- */
+
+    .contato >.interface {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .contato form {
+        width: 100%;
+    }
+
+    .contato form .tel-proj {
+        display: block;
+    }
+
+    /* ---------- RODAPÉ ---------- */
+
+    footer>.interface {
+        flex-direction: column-reverse;
+        gap: 32px;
+        text-align: center;
+    }
+} 

@@ -23,3 +23,45 @@ menuMobile.addEventListener("click",()=>{
 })
 
 
+const portfolioContainer = document.querySelector(".portfolio-container");
+const portfolioTituloMobile = document.querySelector(".portfolio-titulo-mobile");
+const portfolioBoxes = document.querySelectorAll(".portfolio-box");
+
+function updatePortfolio() {
+    const containerCenter = portfolioContainer.scrollLeft + portfolioContainer.offsetWidth / 2;
+
+    let closestBox = null;
+    let closestDistance = Infinity;
+
+    portfolioBoxes.forEach(box => {
+        const boxCenter = box.offsetLeft + box.offsetWidth / 2;
+        const distance = Math.abs(containerCenter - boxCenter);
+
+        // remove classe de foco de todos
+        box.classList.remove("in-focus");
+
+        if(distance < closestDistance) {
+            closestDistance = distance;
+            closestBox = box;
+        }
+    });
+
+    if(closestBox) {
+        closestBox.classList.add("in-focus");
+
+        // Atualiza título com transição suave
+        portfolioTituloMobile.style.opacity = 0;
+        setTimeout(() => {
+            portfolioTituloMobile.textContent = closestBox.dataset.titulo;
+            portfolioTituloMobile.style.opacity = 1;
+        }, 200); // 0.2s de transição
+    }
+}
+
+// Atualiza quando rolar o carrossel
+portfolioContainer.addEventListener("scroll", updatePortfolio);
+
+// Inicializa ao carregar
+updatePortfolio();
+
+
