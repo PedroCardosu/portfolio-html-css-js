@@ -3,7 +3,7 @@
     /* Estilo universal */
 
     h1.titulo-section {
-        font-size: 2.5rem;
+        font-size: 3rem;
         line-height: 1.2;
     }
 
@@ -20,6 +20,10 @@
 
     .menu-desktop {
         display: none;
+    }
+
+    .btn-menu-mobile, .menu-mobile{
+        display: block;
     }
 
     /* Estilo da hero */
@@ -44,7 +48,7 @@
     }
 
     .hero .txt-hero h1 span {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .hero .txt-hero p {
@@ -77,10 +81,6 @@
         grid-template: 1fr 1fr 1fr / 1fr;
     }
 
-    .skills h1 {
-        font-size: 2.4rem;
-    }
-
     /* Estilo section portfolio */
 
 
@@ -92,11 +92,14 @@
         max-width: 300px;
         margin: 0 auto;
     } 
-    
+
+    .portfolio-container .portfolio-box:hover {
+     transform: none;
+    }
 
     /* Estilo seção contato */
 
-    .contato>.interface {
+    .contato >.interface {
         flex-direction: column;
         gap: 32px;
     }
@@ -107,6 +110,10 @@
 
     .contato form .tel-proj {
         display: block;
+    }
+
+    .contato >.txt-contato p{
+        margin-bottom: 8px;
     }
 
     /* Estilo rodapé */
@@ -221,12 +228,4 @@
 
 
 }
-
-
-
-
-
-
-
-
 
