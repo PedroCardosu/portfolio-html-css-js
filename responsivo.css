@@ -13,7 +13,7 @@
         line-height: 1.6;
     }
 
-   /* ---------- MENU ---------- */
+    /* ---------- MENU ---------- */
 
     header {
         background-image: none;
@@ -23,7 +23,8 @@
         display: none;
     }
 
-    .btn-menu-mobile, .menu-mobile{
+    .btn-menu-mobile,
+    .menu-mobile {
         display: block;
     }
 
@@ -44,7 +45,7 @@
     }
 
     .hero .txt-hero h1 {
-        text-align: left; 
+        text-align: left;
         font-size: 2rem;
     }
 
@@ -54,6 +55,7 @@
 
     .hero .txt-hero p {
         font-size: 1rem;
+        text-align: left;
 
     }
 
@@ -69,6 +71,10 @@
         height: auto;
     }
 
+    .sobre-mim .txt-sobre p {
+        font-size: 1rem;
+    }
+
     /* ---------- SKILLS - CARROSSEL ---------- */
 
     section.skills article {
@@ -78,6 +84,17 @@
         -webkit-overflow-scrolling: touch;
         gap: 16px;
         padding-bottom: 16px;
+
+        /* Remove a barra de rolagem */
+        scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* IE e Edge */
+    }
+
+    section.skills article::-webkit-scrollbar {
+        display: none;
+        /* Chrome, Safari e Opera */
     }
 
     .skills img {
@@ -88,12 +105,26 @@
     .skills .box-skills {
         flex: 0 0 80%;
         scroll-snap-align: start;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
     }
 
+    .icon-skills {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    .skills .box-skills p {
+        text-align: left;
+        /* muda de justify para left */
+    }
 
     /* ---------- PORTFÓLIO - CARROSSEL ---------- */
 
-    .portfolio > .interface {
+    .portfolio>.interface {
         max-width: 100%;
         padding: 0 8px;
         display: flex;
@@ -116,11 +147,11 @@
         display: block;
         text-decoration: none;
     }
-    
+
     .portfolio .portfolio-container a .portfolio-box {
-    width: 100%;
-    height: 500px; 
-    }   
+        width: 100%;
+        height: 500px;
+    }
 
     .portfolio-container .portfolio-box:hover {
         transform: none;
@@ -131,12 +162,13 @@
     }
 
     .portfolio-box .info-portfolio {
-        display: flex; /* overlay ainda aparece */
+        display: flex;
+        /* overlay ainda aparece */
     }
 
     /* ---------- CONTATO ---------- */
 
-    .contato >.interface {
+    .contato>.interface {
         flex-direction: column;
         gap: 32px;
     }
@@ -156,4 +188,4 @@
         gap: 32px;
         text-align: center;
     }
-} 
+}
