@@ -63,6 +63,19 @@ a button:hover,
   transition: all 0.3s ease;
 }
 
+/* ====================== ANIMAÇÃO DE SCROLL ====================== */
+
+[data-animar] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+[data-animar].animado {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ====================== TEXTOS ====================== */
 
 h1.titulo-section {
@@ -263,9 +276,12 @@ header nav.menu-desktop button {
 /* ====================== HERO ====================== */
 
 section.hero {
-    background-image: linear-gradient(to left, var(--pretoRico)70%, var(--cereja)30%);
-    padding-top: 144px;
+  position: relative;
+  overflow: hidden; 
+  background-image: linear-gradient(to left, var(--pretoRico) 70%, var(--cereja) 30%);
+  padding-top: 144px;
 }
+
 
 .hero>.interface {
     display: flex;
@@ -303,6 +319,22 @@ section.hero {
     width: 200px;
     height: 48px;
 }
+
+    /* Animação de particula */
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* atrás do conteúdo */
+}
+
+ .hero .interface {
+    position: relative;
+    z-index: 1; /* conteúdo acima das partículas */
+}  
 
 /* ====================== SOBRE MIM ====================== */
 
@@ -458,9 +490,9 @@ section.portfolio {
 }
 
 
-.portfolio-box.projeto1 { background-image: url(imagens/Projetos/projeto-portifolio.webp); }
-.portfolio-box.projeto2 { background-image: url(imagens/Projetos/projeto-portifolio.webp); }
-.portfolio-box.projeto3 { background-image: url(imagens/Projetos/projeto-portifolio.webp); }
+.portfolio-box.projeto1 { background-image: url(imagens/Projetos/projeto-portfolio-1.webp); }
+.portfolio-box.projeto2 { background-image: url(imagens/Projetos/projeto-portfolio-2.webp); }
+.portfolio-box.projeto3 { background-image: url(imagens/Projetos/projeto-portfolio-3.webp); }
 
 /* TITULO PORTFOLIO MOBILE*/
 

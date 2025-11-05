@@ -63,6 +63,8 @@
     <main>
         <!-- ===== HERO ===== -->
         <section class="hero" id="hero">
+            <div id="particles-js"></div>
+
             <div class="interface">
 
                 <div class="img-hero">
@@ -70,7 +72,7 @@
                         alt="Foto de Pedro Cardoso">
                 </div>
 
-                <div class="txt-hero">
+                <div class="txt-hero" data-animar>
                     <h1>Transformo ideias em<span>Experiências digitais!</span></h1>
                     <p>Com foco em UX Design, Web Design e Desenvolvimento Front-end,
                         crio interfaces modernas, funcionais e focadas na experiência do usuário.</p>
@@ -82,7 +84,7 @@
         <!-- ===== SOBRE MIM ===== -->
         <section class="sobre-mim" id="sobre-mim">
             <div class="interface">
-                <div class="txt-sobre">
+                <div class="txt-sobre" data-animar>
                     <h1 class="titulo-section">Sobre <span>mim</span></h1>
                     <p>
                         Olá! Eu sou o Pedro Cardoso, estudante de Desenvolvimento de Software Multiplataforma.
@@ -117,13 +119,13 @@
         <!-- ===== SKILLS ===== -->
         <section class="skills" id="skills">
             <div class="interface">
-                <h1 class="titulo-section">Minhas <span>especialidades</span></h1>
+                <h1 class="titulo-section" data-animar>Minhas <span>especialidades</span></h1>
 
-                <article>
+                <article data-animar>
                     <div class="box-skills">
                         <div class="icon-skills">
                             <img src="imagens/icones/icone-figma.webp" alt="icone Figma">
-                            <h2>Frototipagem <span>Figma</span></h2>
+                            <h2>Prototipagem <span>Figma</span></h2>
                         </div>
                         <p>Crio protótipos e interfaces intuitivas, transformando ideias em designs claros e funcionais.
                         </p>
@@ -182,7 +184,7 @@
         </section>
 
         <!-- ===== PORTFÓLIO ===== -->
-        <section class="portfolio" id="portfolio">
+        <section class="portfolio" id="portfolio" data-animar>
             <div class="interface">
                 <div class="portfolio-txt">
                     <h1 class="titulo-section">Meu <span>portfólio</span></h1>
@@ -190,26 +192,26 @@
                 </div>
 
                 <div class="portfolio-container">
-                    <a href="#" target="_blank">
-                        <div class="portfolio-box projeto1" data-titulo="Projeto 01">
-                            <div class="info-portfolio">Projeto 01</div>
+                    <a href="https://drive.google.com/file/d/1l7NlXHQd_AOZwuN0CseqID7WURJvuqe6/view" target="_blank">
+                        <div class="portfolio-box projeto1" data-titulo="Projeto Coala Multicoisas">
+                            <div class="info-portfolio">Projeto Coala Multicoisas</div>
                         </div>
                     </a>
-                    <a href="#" target="_blank">
-                        <div class="portfolio-box projeto2" data-titulo="Projeto 02">
-                            <div class="info-portfolio">Projeto 02</div>
+                    <a href="https://www.figma.com/proto/XyHfRz7iApcu0zOh4AYlQY/Untitled?node-id=51-21951&starting-point-node-id=51%3A21951&t=iLiJ5NLLggiXp1Wa-1" target="_blank">
+                        <div class="portfolio-box projeto2" data-titulo="Projeto Fresh juice">
+                            <div class="info-portfolio">Projeto Fresh juice</div>
                         </div>
                     </a>
-                    <a href="#" target="_blank">
-                        <div class="portfolio-box projeto3" data-titulo="Projeto 03">
-                            <div class="info-portfolio">Projeto 03</div>
+                    <a href="https://www.figma.com/proto/IQodk4tHzVcvoQr4fqsXWj/Prototipo-Wireframe-Trocabook?node-id=1-3&p=f&t=95R5AA51uFzM6jiF-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank">
+                        <div class="portfolio-box projeto3" data-titulo="Projeto Trocabook">
+                            <div class="info-portfolio">Projeto Trocabook</div>
                         </div>
                     </a>
                 </div>
 
                 <!-- Div do título visível no mobile -->
                 <div class="portfolio-titulo-mobile">
-                    Projeto
+                    Projeto...
                 </div>
             </div>
         </section>
@@ -217,13 +219,13 @@
         <!-- ===== CONTATO ===== -->
         <section class="contato" id="contato">
             <div class="interface">
-                <div class="txt-contato">
+                <div class="txt-contato" data-animar>
                     <h1 class="titulo-section">Entre em <span>contato</span></h1>
                     <p><i class="bi bi-envelope-at"></i>pe.lucas.cardoso@gmail.com</p>
                     <p><i class="bi bi-whatsapp"></i>(11) 99407-2948</p>
                 </div>
 
-                <form id="form-contato">
+                <form id="form-contato" data-animar>
                     <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
                     <input type="email" id="email" name="email" placeholder="Seu email">
                     <div class="tel-proj">
@@ -257,28 +259,9 @@
         </div>
     </footer>
 
-    <!-- ================= API CONTATO ================= -->
+<!-- ================= SCRIPTS ================= -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-<script>
-  (function() {
-    emailjs.init("S464uvoFBnzRNa7eS"); // sua Public Key
-  })();
-
-  document.getElementById("form-contato").addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    emailjs.sendForm("service_3yy7hde", "template_qofzsot", this)
-      .then(function() {
-        alert("Mensagem enviada com sucesso! 🚀");
-      }, function(error) {
-        alert("Ocorreu um erro ao enviar. 😕 Tente novamente mais tarde.");
-        console.error("Erro:", error);
-      });
-  });
-</script>
-
-<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
