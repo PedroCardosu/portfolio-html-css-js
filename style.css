@@ -47,7 +47,6 @@ button {
     cursor: pointer;
 }
 
-
 button:hover,
 a button:hover,
 .contato form .btn-enviar input:hover {
@@ -62,6 +61,19 @@ a button:hover,
   transform: scale(1.03);
   transition: all 0.3s ease;
 }
+
+
+/* ====================== ANIMAÇÃO DE ABERTURA ====================== */
+
+.site-fade {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.site-fade-loaded {
+    opacity: 1;
+}
+
 
 /* ====================== ANIMAÇÃO DE SCROLL ====================== */
 
@@ -490,7 +502,7 @@ section.portfolio {
 }
 
 
-.portfolio-box.projeto1 { background-image: url(imagens/Projetos/projeto-portfolio.webp); }
+.portfolio-box.projeto1 { background-image: url(imagens/projetos/projeto-portfolio.webp); }
 .portfolio-box.projeto2 { background-image: url(imagens/Projetos/projeto-portfolio.webp); }
 .portfolio-box.projeto3 { background-image: url(imagens/Projetos/projeto-portfolio.webp); }
 

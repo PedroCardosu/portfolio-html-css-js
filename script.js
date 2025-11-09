@@ -1,14 +1,23 @@
-// ===== CABEÇALHO AO ROLAR =====
+// ====================== FADE IN AO CARREGAR ======================
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(() => {
+    document.body.classList.add("site-fade-loaded");
+  }, 80); // pequeno delay pra suavizar
+});
+ 
+
+// ====================== CABEÇALHO AO ROLAR ======================
+
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
   const logo = document.querySelector("header img");
 
   if (window.scrollY > 50) {
     header.classList.add("rolagem");
-    logo.src = "imagens/Logotipos portifólio sem fundo/Logotipo-2.png";
+    logo.src = "imagens/logotipos/logotipo-2.png";
   } else {
     header.classList.remove("rolagem");
-    logo.src = "imagens/Logotipos portifólio sem fundo/Logotipo-1.png";
+    logo.src = "imagens/logotipos/logotipo-1.png";
   }
 });
 
@@ -80,7 +89,7 @@ particlesJS("particles-js", {
 });
 
 
-// ====================== aNIMAÇÃO DE FADE SCROLL ======================
+// ====================== ANIMAÇÃO DE FADE SCROLL ======================
 
 document.addEventListener('DOMContentLoaded', () => {
   const elementos = document.querySelectorAll('[data-animar]');
@@ -209,3 +218,23 @@ function updatePortfolioMobile() {
 portContainerMobile.addEventListener("scroll", updatePortfolioMobile);
 window.addEventListener("resize", updatePortfolioMobile); // atualiza se a tela mudar
 updatePortfolioMobile();
+
+
+
+
+
+
+
+
+window.addEventListener("scroll", () => {
+  const metaThemeColor = document.querySelector("meta[name=theme-color]");
+
+  if (window.scrollY > 10) {
+    // COR DO HEADER QUANDO ROLA
+    metaThemeColor.setAttribute("content", "#0D1117"); 
+  } else {
+    // COR DO HEADER NO TOPO
+    metaThemeColor.setAttribute("content", "#db2763"); 
+  }
+});
+
