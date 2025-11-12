@@ -502,9 +502,7 @@ section.portfolio {
 }
 
 
-.portfolio-box.projeto1 { background-image: url(imagens/projetos/projeto-portfolio.webp); }
-.portfolio-box.projeto2 { background-image: url(imagens/Projetos/projeto-portfolio.webp); }
-.portfolio-box.projeto3 { background-image: url(imagens/Projetos/projeto-portfolio.webp); }
+.portfolio-box.projeto1 { background-image: url(./imagens/projetos/projeto-portfolio.webp); }
 
 /* TITULO PORTFOLIO MOBILE*/
 
