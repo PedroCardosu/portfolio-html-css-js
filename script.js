@@ -6,6 +6,20 @@ document.addEventListener("DOMContentLoaded", function () {
 });
  
 
+// ALTERAÇÃO DA COR DO HEADER DO NAVEGADOR MOBILE
+
+window.addEventListener("scroll", () => {
+  const metaThemeColor = document.querySelector("meta[name=theme-color]");
+
+  if (window.scrollY > 10) {
+    // COR DO HEADER QUANDO ROLA
+    metaThemeColor.setAttribute("content", "#0D1117"); 
+  } else {
+    // COR DO HEADER NO TOPO
+    metaThemeColor.setAttribute("content", "#db2763"); 
+  }
+});
+
 // ====================== CABEÇALHO AO ROLAR ======================
 
 window.addEventListener("scroll", function () {
@@ -218,23 +232,3 @@ function updatePortfolioMobile() {
 portContainerMobile.addEventListener("scroll", updatePortfolioMobile);
 window.addEventListener("resize", updatePortfolioMobile); // atualiza se a tela mudar
 updatePortfolioMobile();
-
-
-
-
-
-
-
-
-window.addEventListener("scroll", () => {
-  const metaThemeColor = document.querySelector("meta[name=theme-color]");
-
-  if (window.scrollY > 10) {
-    // COR DO HEADER QUANDO ROLA
-    metaThemeColor.setAttribute("content", "#0D1117"); 
-  } else {
-    // COR DO HEADER NO TOPO
-    metaThemeColor.setAttribute("content", "#db2763"); 
-  }
-});
-
