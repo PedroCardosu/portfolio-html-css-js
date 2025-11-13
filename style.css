@@ -473,7 +473,7 @@ section.portfolio {
     transition: background-position 5s ease; 
     overflow: hidden; 
     position: relative;
-    border:1px solid #DB2763;
+    border: 2px solid #0D1117;
 }
 
 .portfolio-container .portfolio-box:hover {
