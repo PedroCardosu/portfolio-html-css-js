@@ -503,8 +503,9 @@ section.portfolio {
 }
 
 
-.portfolio-box.projeto1 { background-image: url(./imagens/projetos/projeto-portfolio.webp); }
-.portfolio-box.projeto2 { background-image: url(./imagens/projetos/projeto-lobato.webp); }
+.portfolio-box.projeto1 { background-image: url(./imagens/projetos/projetoportfolio.webp); }
+.portfolio-box.projeto2 { background-image: url(./imagens/projetos/projetolobato.webp); }
+.portfolio-box.projeto3 { background-image: url(./imagens/projetos/projetofruta.png); }
 
 /* TITULO PORTFOLIO MOBILE*/
 
