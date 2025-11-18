@@ -170,20 +170,31 @@
 
     .portfolio .portfolio-container a .portfolio-box {
         width: 100%;
-        height: 500px;
+        aspect-ratio: 4 / 5; /* 🔥 proporção perfeita para mobile */
     }
 
     .portfolio-container .portfolio-box:hover {
         transform: none;
     }
 
-    .portfolio-titulo-mobile {
-        display: block;
-    }
 
     .portfolio-box .info-portfolio {
-        display: flex;
+        display: none;
         /* overlay ainda aparece */
+    }
+
+    /* TITULO PORTFOLIO MOBILE*/
+
+    .portfolio-titulo-mobile {
+        display: block; 
+        color: var(--branco);
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 16px;
+        font-weight: 600;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+        padding: 0 10%;
     }
 
     /* ---------- CONTATO ---------- */
@@ -208,4 +219,6 @@
         gap: 32px;
         text-align: center;
     }
+
+
 }

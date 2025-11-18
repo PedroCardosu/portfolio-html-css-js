@@ -19,7 +19,7 @@ img.foto-de-capa {
 
     --branco: #F1F1F1;
     --cereja: #db2763;
-    --pretoRico:#0D1117;
+    --pretoRico: #0D1117;
     --preto: #06080C;
     --cinza: #6C737C;
 }
@@ -50,16 +50,16 @@ button {
 button:hover,
 a button:hover,
 .contato form .btn-enviar input:hover {
-  background-color: var(--cereja);
-  border-color: var(--cereja);
-  color: var(--branco);
-  box-shadow:
-    0 0 2px #DB2763,
-    0 0 6px #DB2763;
-  text-shadow:
-    0 0 2px #DB2763;
-  transform: scale(1.03);
-  transition: all 0.3s ease;
+    background-color: var(--cereja);
+    border-color: var(--cereja);
+    color: var(--branco);
+    box-shadow:
+        0 0 2px #DB2763,
+        0 0 6px #DB2763;
+    text-shadow:
+        0 0 2px #DB2763;
+    transform: scale(1.03);
+    transition: all 0.3s ease;
 }
 
 
@@ -78,14 +78,14 @@ a button:hover,
 /* ====================== ANIMAÇÃO DE SCROLL ====================== */
 
 [data-animar] {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
 }
 
 [data-animar].animado {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* ====================== TEXTOS ====================== */
@@ -108,6 +108,7 @@ span {
         0 0 2px #DB2763;
     animation: pulseGlow 3s ease-in-out infinite alternate;
 }
+
 @keyframes pulseGlow {
     0% {
         text-shadow:
@@ -149,42 +150,44 @@ header .interface {
 }
 
 .logo-container {
-  width: 220px;
-  height: 80px; 
-  position: relative;
+    width: 220px;
+    height: 80px;
+    position: relative;
 }
 
 .logo-container img {
-  width: 100%;
-  height: 100%; 
-  object-fit: contain;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: opacity 0.5s ease, transform 0.4s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease, transform 0.4s ease;
 }
 
 .logo-base {
-  opacity: 1;
+    opacity: 1;
 }
 
 .logo-scroll {
-  opacity: 0;
+    opacity: 0;
 }
 
 header.rolagem img.logo-base {
-  opacity: 0;
+    opacity: 0;
 }
 
 header.rolagem img.logo-scroll {
-  opacity: 1;
+    opacity: 1;
 }
 
 header img {
-  height: 60px;
-  transition: all 0.4s ease;
+    height: 60px;
+    transition: all 0.4s ease;
 }
-header img, header nav a {
+
+header img,
+header nav a {
     transition: transform 0.4s ease, opacity 0.4s ease, color 0.3s ease;
 }
 
@@ -234,12 +237,13 @@ header nav.menu-desktop button {
 
 /* MENU MOBILE */
 
-.btn-menu-mobile, .menu-mobile{
+.btn-menu-mobile,
+.menu-mobile {
     display: none;
 }
 
-.menu-mobile{
-    position:fixed;
+.menu-mobile {
+    position: fixed;
     top: 0;
     left: 100%;
     width: 100%;
@@ -251,13 +255,13 @@ header nav.menu-desktop button {
     transition: .5s;
 }
 
-.menu-mobile ul{
+.menu-mobile ul {
     list-style: none;
     padding: 64px 0;
 }
 
-.menu-mobile ul li a{
-    color:var(--cereja);
+.menu-mobile ul li a {
+    color: var(--cereja);
     font-size: 1.4rem;
     text-decoration: none;
     padding: 24px;
@@ -265,33 +269,34 @@ header nav.menu-desktop button {
     transition: .2s;
 }
 
-.menu-mobile ul li a:hover{
+.menu-mobile ul li a:hover {
     background-color: var(--cereja);
-    color:var(--pretoRico);
+    color: var(--pretoRico);
 }
-.menu-mobile .bi-x{
+
+.menu-mobile .bi-x {
     font-size: 2rem;
-    color:var(--branco);
+    color: var(--branco);
     padding: 24px;
 }
 
-.menu-mobile.abrir-menu{
+.menu-mobile.abrir-menu {
     left: 0;
     pointer-events: initial;
 }
 
-.btn-menu-mobile i{
-    font-size:1.8rem;
+.btn-menu-mobile i {
+    font-size: 1.8rem;
     color: var(--branco);
 }
 
 /* ====================== HERO ====================== */
 
 section.hero {
-  position: relative;
-  overflow: hidden; 
-  background-image: linear-gradient(to left, var(--pretoRico) 70%, var(--cereja) 30%);
-  padding-top: 144px;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(to left, var(--pretoRico) 70%, var(--cereja) 30%);
+    padding-top: 144px;
 }
 
 
@@ -307,16 +312,16 @@ section.hero {
 }
 
 .hero .txt-hero h1 {
-  font-size: 3rem;
-  color: var(--branco);
-  font-weight: 300;
+    font-size: 3rem;
+    color: var(--branco);
+    font-weight: 300;
 }
 
 .hero .txt-hero h1 span {
-  color: var(--cereja);
-  display: block;
-  font-weight: 800;
-  font-size: 3.9rem;
+    color: var(--cereja);
+    display: block;
+    font-weight: 800;
+    font-size: 3.9rem;
 }
 
 
@@ -332,7 +337,7 @@ section.hero {
     height: 48px;
 }
 
-    /* Animação de particula */
+/* Animação de particula */
 
 #particles-js {
     position: absolute;
@@ -340,13 +345,15 @@ section.hero {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0; /* atrás do conteúdo */
+    z-index: 0;
+    /* atrás do conteúdo */
 }
 
- .hero .interface {
+.hero .interface {
     position: relative;
-    z-index: 1; /* conteúdo acima das partículas */
-}  
+    z-index: 1;
+    /* conteúdo acima das partículas */
+}
 
 /* ====================== SOBRE MIM ====================== */
 
@@ -466,19 +473,20 @@ section.portfolio {
 
 .portfolio-container .portfolio-box {
     min-width: 200px;
-    height: 400px;
+    aspect-ratio: 3 / 2;
+    /* 🔥 mesma largura, proporção horizontal */
     border-radius: 16px;
     background-size: cover;
-    background-position: center top; 
-    transition: background-position 5s ease; 
-    overflow: hidden; 
+    background-position: center top;
+    transition: background-position 5s ease;
+    overflow: hidden;
     position: relative;
     border: 2px solid #0D1117;
 }
 
 .portfolio-container .portfolio-box:hover {
-    background-position: center bottom; 
-} 
+    background-position: center bottom;
+}
 
 .info-portfolio {
     position: absolute;
@@ -492,32 +500,37 @@ section.portfolio {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 20%;
     font-weight: 600;
     font-size: 1.2rem;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
+/* Título do portfólio visível só no mobile */
+.portfolio-titulo-mobile {
+    display: none;
+}
+
 .portfolio-box:hover .info-portfolio {
     opacity: 1;
 }
 
+.portfolio-box.projeto1 {
+    background-image: url(./imagens/projetos/projetoportfolio.webp);
+}
 
-.portfolio-box.projeto1 { background-image: url(./imagens/projetos/projetoportfolio.webp); }
-.portfolio-box.projeto2 { background-image: url(./imagens/projetos/projetolobato.webp); }
-.portfolio-box.projeto3 { background-image: url(./imagens/projetos/projetofruta.png); }
+.portfolio-box.projeto2 {
+    background-image: url(./imagens/projetos/projetolobato.webp);
+}
 
-/* TITULO PORTFOLIO MOBILE*/
+.portfolio-box.projeto3 {
+    background-image: url(./imagens/projetos/projetofruta.png);
+}
 
-.portfolio-titulo-mobile {
-    display: none; 
-    color: var(--branco);
-    text-align: center;
-    font-size: 1.2rem;
-    margin-top: 16px;
-    font-weight: 600;
-    opacity: 1;
-    transition: opacity 0.5s ease;
+.portfolio-box.projeto4 {
+    background-image: url(./imagens/projetos/projetostarwars.webp);
 }
 
 /* ====================== CONTATO ====================== */
@@ -603,3 +616,4 @@ footer .logo-footer img {
     max-width: 160px;
     margin-bottom: 16px;
 }
+
